@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,16 +12,20 @@
 </head>
 <body class="body">
     
-    <div id="overlay"">
+    <!-- <div id="overlay">
         <img id="largeImage" src="" alt="Большое изображение">
     </div>
 
-
+ -->
 
         <!--Navbar -->
         <nav class="navbar">
+
     <h3 class="navbar__logo">Adossya.dev</h3>
+
+
     <ul class="navbar__ul">
+
         <li>
             <a href="#home" class="navbar__link">Home</a>
         </li>
@@ -35,12 +38,15 @@
         <li>
             <a href="#contact" class="navbar__link">Contact</a>
         </li>
+        <button class="navbar__lang">UA</button>
     </ul>
 
-    
-    <div class="navbar__hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__hamburger-svg"><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg>
-    </div>
+
+        <div class="navbar__hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__hamburger-svg"><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg>
+        </div>
+
+
 
 
 </nav>
@@ -71,11 +77,17 @@
     <div class="container">
         <div class="hero__wrapper">
             <div class="hero__info">
-                <h1 class="hero__title">Frontend developer</h1>
+                <h1 class="title hero__title">Frontend developer</h1>
                 <div class="hero__description mt5">Hi, I'm Anton Lupalov. Junior Frontend Developer based in Krivyi Rih, Ukraine.</div>
                 <div class="hero__links mt15">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero__links-svg"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero__links-svg"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+                    <a href="https://github.com/Adossya"target="_blank" class="hero__link-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero__links-svg"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/adossya/" target="_blank" class="hero__links-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero__links-svg"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+                    
+                    </a>
 
                 </div>
             </div>
@@ -93,7 +105,6 @@
                 <img src="../img/office.png" alt="office-photo">
             </div>
             <div class="about__info">
-                <!-- <h3 class="about__start">A bit</h3> -->
                 <h2 class="about__title hero__title">About me </h2>
                 <ul class="about__ul">
                     <li class="about__li active">Life</li>
@@ -111,7 +122,7 @@
                         With my knowledge of <strong>HTML, CSS, and JavaScript</strong>, I am capable of creating modern and responsive websites that meet the latest standards and trends. I can assist in developing user interfaces, ensuring a smooth interaction experience for users. From simple markup and styling of pages to implementing dynamic content using JavaScript, I am ready to take on the entire process.
                     </div>
                 </div>
-                <a href="../file/Anton-3.pdf" class="about__resume" download="CV_Anton Lupalov_frontend developer.pdf">Download CV</a>
+                <a href="../file/English_resume.pdf" class="about__resume" download="CV_Anton Lupalov_frontend developer.pdf">Download CV</a>
             </div>
         </div>
     </div>
@@ -121,7 +132,7 @@
         <section class="skills">
     <div class="container">
         <div class="skills__overflow"></div>
-        <h3 class="skills__subtitle">Tech stack</h3>
+        <h3 class="skills__subtitle">Tech skills</h3>
         <div class="skills__wrapper mt15">
 
             <div class="skills__item">
@@ -194,22 +205,49 @@
         <!--Projects-->
         <section id="projects" class="projects">
     <div class="container">
-        <div class="projects__subtitle">My projects</div>
+        <h3 class="projects__subtitle">My last projects</h3>
         <div class="projects__wrapper">
-            <div class="projects__item">
-                <a href="" class="projects__image">
-                    <img src="../img/hangman_main.png" alt="Hangman_game">
-                </a>
-                <div class="projects__img-full">
-                    <img  id="petu" src="" alt="Hangman_game" class="projects__img-f">
-                </div>
 
+            <div class="projects__item">
+                <div class="projects__image">
+                    <img src="../img/icodethis.jpg" alt="Icodethis">
+                </div>
+                <div class="projects__item--shadow">
+                    <div class="projects__item-title">
+                        iCodeThis
+                    </div>
+                    <div class="projects__description">
+                        <p>
+                            While studying HTML, CSS, and JavaScript, I actively practiced using the ICodeThis platform. By completing tasks on the site, I applied the knowledge I gained to create various web elements and interfaces. This helped me better understand how web technologies work and develop my programming skills, as well as strengthen my understanding of the interaction between HTML, CSS, and JavaScript in real-world projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__links">
+                    <a href="https://icodethis.com/Adossya" class="projects__links-web">
+                        <svg  viewBox="0 0 1024 1024" width="25px" height="25px" stroke="currentColor" stroke-width="2" class="projects__links-web" >
+                            <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"></path>
+                        </svg>
+                    </a>
+
+                    <!-- <a href="" class="projects__links-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="29px" class="projects__links-github" viewBox="0 0 32 32"  fill-rule="evenodd"><path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"/></svg>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="projects__item">
+                <div class="projects__image">
+                    <img src="../img/hangman_main.png" alt="Hangman_game">
+                </div>
                 <div class="projects__item--shadow">
                     <div class="projects__item-title">
                         Hangman
                     </div>
                     <div class="projects__description">
-                        Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save up to 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The Github repository for this is private at the moment.
+                        <p>
+                            I created the "Hangman" project to showcase my skills in working with JavaScript, HTML, and CSS. During the development of the game, I used JavaScript to handle the game logic, process user inputs, and dynamically update the interface based on player actions.
+                        </p>
+
                     </div>
 
                 </div>
@@ -220,7 +258,7 @@
                         </svg>
                     </a>
 
-                    <a href="" class="projects__links-github">
+                    <a href="https://github.com/Adossya/pet_project_Hangman" class="projects__links-github">
                         <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="29px" class="projects__links-github" viewBox="0 0 32 32"  fill-rule="evenodd"><path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"/></svg>
                     </a>
                 </div>
@@ -228,14 +266,16 @@
 
             <div class="projects__item">
                 <div class="projects__image">
-                    <img src="../img/hangman_main.png" alt="Hangman_game">
+                    <img src="../img/Pulse.jpg" alt="Pulse">
                 </div>
                 <div class="projects__item--shadow">
                     <div class="projects__item-title">
-                        Hangman
+                        Pulse
                     </div>
                     <div class="projects__description">
-                        An easy to use, lightweight library for web-components. It doesn't need a build step but can be included in a build step if you want to. It's a great way to create reusable components for your projects. It's available as a NPM package and doesn't use any dependencies and is 11kb minified. It also doesn't use eval or new Function so can be used in strict CSP policies without a build step.
+                        <p>
+                            While studying web development, I actively practiced creating various landing pages. These projects were a great opportunity to apply theoretical knowledge in practice. Building landing pages helped me better understand how to organize content effectively, improve user interfaces, and ensure easy navigation, which are crucial aspects of web design.
+                        </p>
                     </div>
 
                 </div>
@@ -245,61 +285,10 @@
                             <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"></path>
                         </svg>
                     </a>
-
+<!-- 
                     <a href="" class="projects__links-github">
                         <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="29px" class="projects__links-github" viewBox="0 0 32 32"  fill-rule="evenodd"><path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="projects__item">
-                <div class="projects__image">
-                    <img src="../img/hangman_main.png" alt="Hangman_game">
-                </div>
-                <div class="projects__item--shadow">
-                    <div class="projects__item-title">
-                        Hangman
-                    </div>
-                    <div class="projects__description">
-                        Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save up to 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The Github repository for this is private at the moment.
-                    </div>
-                </div>
-                <div class="projects__links">
-                    <a href="" class="projects__links-web">
-                        <svg  viewBox="0 0 1024 1024" width="25px" height="25px" stroke="currentColor" stroke-width="2" class="projects__links-web" >
-                            <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"></path>
-                        </svg>
-                    </a>
-
-                    <a href="" class="projects__links-github">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="29px" class="projects__links-github" viewBox="0 0 32 32"  fill-rule="evenodd"><path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="projects__item">
-                <div class="projects__image">
-                    <img src="../img/hangman_main.png" alt="Hangman_game">
-                </div>
-                <div class="projects__item--shadow">
-                    <div class="projects__item-title">
-                        Hangman
-                    </div>
-                    <div class="projects__description">
-                        Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save up to 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The Github repository for this is private at the moment.
-                    </div>
-
-                </div>
-                <div class="projects__links">
-                    <a href="" class="projects__links-web">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="projects__links-web" viewBox="0 0 1024 1024" width="25px" height="25px">
-                            <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"></path>
-                        </svg>
-                    </a>
-
-                    <a href="" class="projects__links-github">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="29px" class="projects__links-github" viewBox="0 0 32 32"  fill-rule="evenodd"><path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"/></svg>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -320,16 +309,16 @@
                 <div class="contact__description">
                     Write me -
                 </div>
-                <a href="mailto:adossya21@gmail.com" class="contact__link">adossya21@gmail.com</a>
+                <a href="mailto:adossya21@gmail.com"  class="contact__link">adossya21@gmail.com</a>
             </div>
             <div class="contact__item">
                 <div class="contact__icon">
-                    <img src="../icons/phone.svg" alt="" class="contact__icon-svg">
+                    <img src="../icons/telegram.svg" alt="" class="contact__icon-svg">
                 </div>
                 <div class="contact__description">
                     Write me -
                 </div>
-                <a href="https://t.me/adossya" type="mailto" class="contact__link">t.me/adossya</a>
+                <a href="https://t.me/adossya" target="_blank" class="contact__link">t.me/adossya</a>
             </div>
             <div class="contact__item">
                 <div class="contact__icon">
@@ -338,7 +327,7 @@
                 <div class="contact__description">
                     Find me -
                 </div>
-                <a href="https://www.linkedin.com/in/adossya/" type="mailto" class="contact__link">https://www.linkedin.com/in/adossya/</a>
+                <a href="https://www.linkedin.com/in/adossya/" target="_blank" class="contact__link">https://www.linkedin.com/in/adossya/</a>
             </div>
         </div>
     </div>  
