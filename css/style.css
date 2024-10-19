@@ -17,7 +17,6 @@
   box-sizing: border-box;
   scrollbar-color: var(--blackColor) var(--whiteColor);
   scrollbar-width: thin;
-  outline: 3px solid gray !important;
 }
 
 .container {
@@ -372,7 +371,7 @@ a {
 .about__info {
   width: 50%;
   height: 50rem;
-  padding: 2rem;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -380,9 +379,43 @@ a {
 }
 
 .about__title {
-  margin-top: 15px;
+  margin-top: 10px;
   width: 48%;
-  font-size: clamp(5rem,5vh,5rem);
+  font-size: 5rem;
+  background-position: -27rem 0;
+  animation: AboutText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.about__title::before {
+  content: "";
+  animation: AboutCurrent 6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes AboutText {
+  0%, 10%, 100% {
+    background-position: -27rem 0;
+  }
+
+  66%, 85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes AboutCurrent {
+  0%, 10%, 100% {
+    width: 0;
+  }
+
+  65%, 78%, 85% {
+    width: 99%;
+    opacity: 1;
+  }
+
+  70%, 81% {
+    opacity: 0;
+  }
 }
 
 .about__ul {
@@ -652,8 +685,41 @@ a {
 }
 
 .contact__title {
-  width: 61%;
-  background-position: -65.5rem 0;
+  width: 90rem;
+  background-position: -90rem 0;
+  animation: ContactText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.contact__title::before {
+  content: "";
+  animation: ContactCurrent 6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes ContactText {
+  0%, 10%, 100% {
+    background-position: -90rem 0;
+  }
+
+  66%, 85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes ContactCurrent {
+  0%, 10%, 100% {
+    width: 0;
+  }
+
+  65%, 78%, 85% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  70%, 81% {
+    opacity: 0;
+  }
 }
 
 .contact__subtitle {
@@ -662,12 +728,13 @@ a {
   font-family: "Mulish",sans-serif;
   font-family: 600;
   color: #6d6d6c;
+  text-align: start;
 }
 
 .contact__devider {
   margin-top: 1.75rem;
   width: 75%;
-  height: 1px;
+  height: 2px;
   background-color: #6d6d6c;
 }
 
@@ -919,12 +986,30 @@ a {
     justify-content: center;
   }
 
+  .projects {
+    padding-top: 25px;
+  }
+
+  .projects__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+
+  .projects__item-title {
+    font-size: 2.5rem;
+  }
+
+  .projects__description {
+    font-size: 2.5rem;
+  }
+
   .contact {
-    padding: 30px;
+    padding: 15px 10px 15px 10px;
     min-height: 50rem;
   }
 
   .contact__wrapper {
+    margin-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
@@ -932,10 +1017,43 @@ a {
   .contact__title {
     margin: 0 auto;
     text-align: center;
-    width: 70%;
-    background-position: -45rem 0;
-    font-size: 3.4rem;
+    width: 100%;
+    background-position: 0 0;
+    font-size: 2.8rem;
+    animation-play-state: paused;
   }
+
+  .contact__title::before {
+    content: "";
+    left: 0%;
+    animation-play-state: paused;
+    display: none;
+  }
+
+@keyframes ContactText {
+    0%, 10%, 100% {
+      background-position: 0 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes ContactCurrent {
+    0%, 10%, 100% {
+      width: 0%;
+    }
+
+    65%, 78%, 85% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
 
   .contact__subtitle {
     text-align: center;
@@ -954,7 +1072,8 @@ a {
   }
 
   .contact__link {
-    font-size: 1.8rem;
+    text-align: center;
+    font-size: 2rem;
   }
 
   .footer {
@@ -1003,6 +1122,13 @@ a {
 
   .about__wrapper {
     width: 96rem;
+    box-shadow: 0 0 5px 1px #000;
+    gap: 2rem;
+  }
+
+  .about__image img {
+    width: 42rem;
+    height: 45rem;
   }
 
   .about__title {
@@ -1015,24 +1141,54 @@ a {
   }
 
   .about__resume {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
   }
 
   .contact {
     padding: 50px;
+    min-height: 50rem;
   }
 
   .contact__wrapper {
+    margin-top: 5rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .contact__title {
-    width: 70%;
-    background-position: -65.5rem 0;
+    width: 90rem;
   }
+
+@keyframes ContactText {
+    0%, 10%, 100% {
+      background-position: -90rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes ContactCurrent {
+    0%, 10%, 100% {
+      width: 0;
+    }
+
+    65%, 78%, 85% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
 
   .contact__link {
     font-size: 1.6rem;
+  }
+
+  .footer {
+    height: 11rem;
   }
 }
 
@@ -1085,24 +1241,52 @@ a {
 
   .about__wrapper {
     width: 80rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     gap: 2rem;
+    box-shadow: 0 0 5px 1px #000;
   }
 
   .about__image img {
     border-radius: 10px;
     width: 37.5rem;
-    height: 37.5rem;
-  }
-
-  .about__info {
     height: 40rem;
   }
 
-  .about__title {
-    margin-top: 10px;
-    width: 52.5%;
-    font-size: 4rem;
+  .about__info {
+    height: 45rem;
   }
+
+  .about__title {
+    width: 60%;
+    font-size: 4rem;
+    background-position: -22rem 0;
+  }
+
+@keyframes AboutText {
+    0%, 10%, 100% {
+      background-position: -22rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes AboutCurrent {
+    0%, 10%, 100% {
+      width: 0;
+    }
+
+    65%, 78%, 85% {
+      width: 99%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
 
   .about__ul {
     margin-top: 15px;
@@ -1128,19 +1312,54 @@ a {
 
   .contact {
     padding: 50px;
+    min-height: 48rem;
   }
 
   .contact__wrapper {
+    margin-top: 4rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .contact__title {
-    width: 74.5%;
-    background-position: -55.5rem 0;
+    width: 66rem;
+    font-size: 4rem;
   }
+
+  .contact__devider {
+    width: 100%;
+  }
+
+@keyframes ContactText {
+    0%, 10%, 100% {
+      background-position: -67rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes ContactCurrent {
+    0%, 10%, 100% {
+      width: 0;
+    }
+
+    65%, 78%, 85% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
 
   .contact__link {
     font-size: 1.6rem;
+  }
+
+  .footer {
+    height: 11rem;
   }
 }
 
@@ -1240,6 +1459,10 @@ a {
     width: 100%;
     height: 100vh;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
     gap: 1rem;
     flex-direction: column;
   }
@@ -1252,19 +1475,46 @@ a {
 
   .about__info {
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .about__title {
-    margin-top: 5px;
+    width: 21.5rem;
+    font-size: 4rem;
+    background-position: -22rem 0;
   }
 
+@keyframes AboutText {
+    0%, 10%, 100% {
+      background-position: -22rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes AboutCurrent {
+    0%, 10%, 100% {
+      width: 0;
+    }
+
+    65%, 78%, 85% {
+      width: 99%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
+
   .about__ul {
-    margin-top: 15px;
+    margin-top: 10px;
     gap: 5rem;
     justify-content: center;
     align-items: center;
@@ -1275,17 +1525,18 @@ a {
   }
 
   .about__description {
-    margin-top: 2rem;
+    margin-top: 20px;
+    height: 100%;
   }
 
   .about__item {
     font-size: 3.25rem;
-    height: 20rem;
+    height: 32rem;
     width: 100%;
   }
 
   .about__resume {
-    margin-top: 2.4rem;
+    margin-top: 2.75rem;
     font-size: 2.5rem;
     width: 20rem;
     height: 5rem;
@@ -1315,16 +1566,42 @@ a {
   .contact__title {
     margin: 0 auto;
     text-align: center;
-    width: 70%;
-    background-position: -45rem 0;
+    width: 55rem;
+    background-position: -55rem 0;
     font-size: 3.4rem;
   }
+
+@keyframes ContactText {
+    0%, 10%, 100% {
+      background-position: -55rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes ContactCurrent {
+    0%, 10%, 100% {
+      width: 1%;
+    }
+
+    65%, 78%, 85% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
 
   .contact__subtitle {
     text-align: center;
   }
 
   .contact__devider {
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.5rem;
   }
@@ -1337,7 +1614,12 @@ a {
   }
 
   .contact__link {
-    font-size: 1.8rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    height: 11rem;
   }
 }
 
@@ -1433,32 +1715,47 @@ a {
     height: 100vh;
     padding: 10px;
     gap: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
     flex-direction: column;
   }
 
   .about__image img {
     border-radius: 10px;
-    width: 50rem;
-    height: 50rem;
+    width: 46rem;
+    height: 46rem;
   }
 
   .about__info {
     width: 100%;
-    height: 40rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    justify-content: space-between;
+    height: 50rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .about__title {
-    margin-top: 0;
-    width: 40%;
-    font-size: 2.5rem;
+    margin-top: 2rem;
+    width: 21.5rem;
+    font-size: 4rem;
+    background-position: -22rem 0;
   }
 
+@keyframes AboutText {
+    0%, 10%, 100% {
+      background-position: -22rem 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
   .about__ul {
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 3rem;
     justify-content: center;
     align-items: center;
@@ -1469,17 +1766,18 @@ a {
   }
 
   .about__description {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    height: 100%;
   }
 
   .about__item {
     font-size: 2.75rem;
-    height: 20rem;
+    height: 40rem;
     width: 100%;
   }
 
   .about__resume {
-    margin-top: 2rem;
+    margin-top: 2.75rem;
     font-size: 2.5rem;
     width: 20rem;
     height: 5rem;
@@ -1492,9 +1790,21 @@ a {
     justify-content: center;
   }
 
+  .projects {
+    padding-top: 25px;
+  }
+
   .projects__wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 2.5rem;
+  }
+
+  .projects__item-title {
+    font-size: 2.5rem;
+  }
+
+  .projects__description {
+    font-size: 2.5rem;
   }
 
   .contact {
@@ -1503,6 +1813,7 @@ a {
   }
 
   .contact__wrapper {
+    margin-top: 3rem;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
@@ -1510,16 +1821,51 @@ a {
   .contact__title {
     margin: 0 auto;
     text-align: center;
-    width: 70%;
-    background-position: -45rem 0;
-    font-size: 3.4rem;
+    width: 100%;
+    background-position: 0 0;
+    font-size: 2.8rem;
+    animation-play-state: paused;
   }
 
+  .contact__title::before {
+    content: "";
+    left: 0%;
+    animation-play-state: paused;
+    display: none;
+  }
+
+@keyframes ContactText {
+    0%, 10%, 100% {
+      background-position: 0 0;
+    }
+
+    66%, 85% {
+      background-position: 0 0;
+    }
+}
+
+@keyframes ContactCurrent {
+    0%, 10%, 100% {
+      width: 0%;
+    }
+
+    65%, 78%, 85% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    70%, 81% {
+      opacity: 0;
+    }
+}
+
   .contact__subtitle {
+    font-size: 2rem;
     text-align: center;
   }
 
   .contact__devider {
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.5rem;
   }
@@ -1532,10 +1878,11 @@ a {
   }
 
   .contact__link {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   .footer {
-    height: 13rem;
+    height: 11rem;
   }
 }
